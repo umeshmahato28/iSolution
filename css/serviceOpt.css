@@ -1,0 +1,126 @@
+/* services.css - Styles for Services Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+  }
+  
+  .container {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/74/374/372/colorful-minimalism-windows-10-pastel-shapes-hd-wallpaper-preview.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    height: 100vh;
+    padding-left: 19rem;
+    padding-right: 19rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-img{
+    height: full;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+ 
+  .service_co {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-size: cover; /* Make background image cover the entire card */
+  background-position: center; 
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  height: 13rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:nth-child(1) {
+  background-image: url('https://i.pinimg.com/736x/d5/d5/12/d5d5127896146140c7619351edf64edb.jpg'); /* Replace with actual image URL */
+}
+
+.card:nth-child(2) {
+  background-image: url('https://image.slidesdocs.com/responsive-images/background/auto-repair-auto-overhaul-powerpoint-background_8326db49eb__960_540.jpg');
+}
+
+.card:nth-child(3) {
+  background-image: url('https://st4.depositphotos.com/24541578/39140/i/450/depositphotos_391407522-stock-photo-background-banner-home-cleaning-products.jpg'); /* Replace with actual image URL */
+}
+
+.card:nth-child(4) {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201105/pngtree-cartoon-flat-purple-gradient-express-delivery-background-image_451077.jpg'); /* Replace with actual image URL */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+}
+
+
+
+
+
+  
+  .btn-app {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+    display: block;
+    width: 50%;
+    margin: 1.5rem auto 0;
+  }
+  
+  .btn-app:hover {
+    background-color: #218838;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
