@@ -1,38 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/sForm.css">
-      <title>Book service now</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sForm.css">
+    <title>Book Service Now</title>
 </head>
 <body>
-       <form id="bookingForm">
-            <label for="service">Service:</label>
-            <select id="service" required>
-                <option value="AC Repair">AC Repair</option>
-                <option value="House Cleaning">House Cleaning</option>
-                <option value="Vehicle Repair">Vehicle Repair</option>
+    <form id="bookingForm">
+        <label for="service">Service:</label>
+        <select id="service" required>
+            <option value="">Select Service</option>
+            <option value="Appliance Repair" data-price="200">Appliance Repair</option>
+            <option value="House Cleaning" data-price="150">House Cleaning</option>
+            <option value="Vehicle Repair" data-price="300">Vehicle Repair</option>
+            <option value="Product Deliery" data-price="300">Product Pick up & drop</option>
+        </select>
+
+        <!-- Additional options for Appliance Repair -->
+        <div id="applianceOptions" style="display: none;">
+            <label for="applianceType">Appliance Type:</label>
+            <select id="applianceType" required>
+                <option value="AC" data-price="1000">AC</option>
+                <option value="TV" data-price="500">TV</option>
+                <option value="TV" data-price="800">Fridge</option>
+                <option value="Washing Machine" data-price="1300">Washing Machine</option>
             </select>
+        </div>
 
-            <label for="date">Date/Slot:</label>
-            <input type="date" id="date" required>
-
-            <label for="address">Address:</label>
-            <textarea id="address" maxlength="100" required></textarea>
-
-            <label for="vendor">Vendor:</label>
-            <select id="vendor" required>
-                <option value="Vendor 1">Vendor 1</option>
-                <option value="Vendor 2">Vendor 2</option>
-                <option value="Vendor 3">Vendor 3</option>
+        <!-- Additional options for House Cleaning -->
+        <div id="cleaningOptions" style="display: none;">
+            <label for="cleaningType">Cleaning Type:</label>
+            <select id="cleaningType" required>
+                <option value="1BHK Flat" data-price="1900">1BHK Flat</option>
+                <option value="2BHK Flat" data-price="2500">2BHK Flat</option>
+                <option value="2BHK Flat" data-price="3000">3BHK Flat</option>
+                <option value="Bathroom Cleaning" data-price="1500">Bathroom Cleaning</option>
             </select>
+        </div>
 
-            <label for="amount">Amount:</label>
-            <input type="text" id="amount" value="500" readonly>
+        <div id="vehicleOptions" style="display: none;">
+            <label for="vehicleType">Vehicle Type:</label>
+            <select id="vehicleType" required>
+                <option value="2 Wheeler" data-price="4900">2 Wheeler</option>
+                <option value="3 Wheeler" data-price="8000">3 Wheeler</option>
+                <option value="4 Wheeler" data-price="12000">4 Wheeler</option>
+            </select>
+        </div>
+        <div id="productOptions" style="display: none;">
+            <label for="productType">Product Type:</label>
+            <select id="productType" required>
+                <option value="Furniture" data-price="1200">Furniture</option>
+                <option value="Groceries" data-price="700">Groceries</option>
+                <option value="Vehicle" data-price="2000">Vehicle</option>
+            </select>
+        </div>
 
-            <button type="submit" class="btn">Confirm Booking</button>
-            
-        </form>
+        <!-- Other form fields -->
+        <label for="date">Date/Slot:</label>
+        <input type="date" id="date" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" maxlength="100" required></textarea>
+
+        <label for="vendor">Vendor:</label>
+        <select id="vendor" required>
+            <option value="Vendor 1">Vendor 1</option>
+            <option value="Vendor 2">Vendor 2</option>
+            <option value="Vendor 3">Vendor 3</option>
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" value="0" readonly>
+
+        <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+
+    <!-- Booking Details Modal -->
+    <div id="bookingModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Booking Confirmation</h2>
+            <p>Service ID: <span id="modalServiceId"></span></p>
+            <p>Vendor: <span id="modalVendor"></span></p>
+            <p>Date: <span id="modalDate"></span></p>
+            <p>Amount: <span id="modalAmount"></span></p>
+            <button onclick="location.href='serviceOpt.html'" class="btn">Back to Home</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js//serviceForm.js"></script>
 </body>
 </html>
