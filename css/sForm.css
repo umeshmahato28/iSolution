@@ -2,29 +2,38 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+    /* background-color: #f4f4f9; */
+    background-image: url('https://img.freepik.com/free-vector/prickly-juniper-branch-beige-gray-minimal-background_53876-113047.jpg?w=1060&t=st=1728235583~exp=1728236183~hmac=127106db6b02bc02b5cb3d4c902e4eac31621b5a0242f39c628033c11ecb7e67');
+    background-position: center;
+    background-size: cover;
+    
+    padding: 1.5rem;
 }
+
+
+
 
 form {
     max-width: 500px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
+    
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #b9828246;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label, select, input, textarea {
+label, select, input, option {
     display: block;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 95%;
+    margin-bottom: 8px;
     padding: 8px;
     font-size: 14px;
 }
 
-input, select, textarea {
+input, select {
     border: 1px solid #ccc;
     border-radius: 5px;
 }

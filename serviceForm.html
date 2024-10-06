@@ -55,20 +55,22 @@
                 <option value="Vehicle" data-price="2000">Vehicle</option>
             </select>
         </div>
+        <label for="vendor">Vendor:</label>
+        <select id="vendor" required>
+            <option value="">Select Vendor</option>
 
+            <option value="Fix it All">Fix it All</option>
+            <option value="ALL Service">AllService</option>
+            <option value="MasterFix">MasterFix</option>
+        </select>
         <!-- Other form fields -->
         <label for="date">Date/Slot:</label>
         <input type="date" id="date" required>
 
         <label for="address">Address:</label>
-        <textarea id="address" maxlength="100" required></textarea>
+        <input id="address" maxlength="100" required></input>
 
-        <label for="vendor">Vendor:</label>
-        <select id="vendor" required>
-            <option value="Vendor 1">Vendor 1</option>
-            <option value="Vendor 2">Vendor 2</option>
-            <option value="Vendor 3">Vendor 3</option>
-        </select>
+        
 
         <label for="amount">Amount:</label>
         <input type="text" id="amount" value="0" readonly>
