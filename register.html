@@ -10,20 +10,19 @@
     <div class="container">
         <h2 class="head">Register</h2>
         <form id="registrationForm">
-            <label for="userName">User Name:</label>
+            <label for="userName">Full Name:</label>
             <input type="text" id="userName" maxlength="50" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" required>
+            
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" maxlength="10" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" maxlength="30" required>
 
-            <label for="address">Address:</label>
-            <input id="address" maxlength="100" required></input>
 
-            <label for="contactNumber">Contact Number:</label>
-            <input type="text" id="contactNumber" maxlength="10" required>
 
             <button type="submit" class="btnn">Register</button>
         </form>
@@ -33,10 +32,10 @@
     <div id="successModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p id="successMessage" style="color: green;">User Registration successful.</p>
+            <h3 id="successMessage" style="color: green;">User Registration successful.</h3>
             <p>User Id: <span id="userId"></span></p>
             <p>Email: <span id="modalEmail"></span></p>
-            <p>*Note - Remember your User ID.</p>
+            <p class="modalNote"><b>Note</b> - Remember your <b>User ID</b>.</p>
         <button onclick="location.href='login.html'" class="btn">Login</button>
 
         </div>
